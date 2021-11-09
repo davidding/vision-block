@@ -1,0 +1,37 @@
+{
+  "name": "Vision Block",
+  "description": "Visually obscures a web page, to encourage testing screen reader navigation.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": [
+    "tabs",
+    "storage",
+    "scripting",
+    "webNavigation"
+  ],
+  "host_permissions": [
+    "https://*/",
+    "http://*/"
+  ],
+  "action": {
+    "default_title": "Vision Block",
+    "default_icon": {
+      "64": "icon.png"
+    }
+  },
+  "icons": {
+    "64": "icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/",
+        "http://*/"
+      ],
+      "js": ["content.js"]
+    }
+  ]
+}
