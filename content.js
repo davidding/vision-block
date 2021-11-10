@@ -1,6 +1,6 @@
 (function() {
-  const STORAGE_KEY = "visionBlockEnabled"; // match background.js
-  const LAYER_ID = "layer-toggle-1317785004";
+  const STORAGE_KEY = "vision-block-enabled-7874031313"; // must be unique to extension and match background.js
+  const LAYER_ID = "vision-block-5095423036"; // must be unique to extension
   const LAYER_CSS = `position: fixed !important;
     inset: 0 !important;
     padding: 0 !important;
@@ -29,25 +29,22 @@
       #${id} ~ * {
         z-index: 0 !important;
       }
-    </style>`)
+    </style>`);
     return layer;
   };
 
   /**
+   * @param {string} id
    * @returns {HTMLElement}
    */
-  const getLayer = () => {
-    return document.getElementById(LAYER_ID) || createLayer(LAYER_ID);
-  }
+  const getLayer = (id) => document.getElementById(id) || createLayer(id);
 
   /**
    *
    * @param {HTMLElement} layer
    * @returns {boolean}
    */
-  const isLayerActive = (layer) => {
-    return document.body.contains(layer);
-  };
+  const isLayerActive = (layer) => document.body.contains(layer);
 
   /**
    * @param {HTMLElement} layer
@@ -73,7 +70,7 @@
   };
 
   chrome.storage.local.get(STORAGE_KEY, (result) => {
-    const layer = getLayer();
+    const layer = getLayer(LAYER_ID);
     toggleLayer(layer, result[STORAGE_KEY]);
   });
 }());

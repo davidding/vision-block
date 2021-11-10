@@ -1,4 +1,4 @@
-const STORAGE_KEY = "visionBlockEnabled"; // match content.js
+const STORAGE_KEY = "vision-block-enabled-7874031313"; // must be unique to extension and match content.js
 
 /**
  * See https://developer.chrome.com/docs/extensions/reference/tabs/#type-Tab
