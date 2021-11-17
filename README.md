@@ -21,3 +21,8 @@ Clone the repository or download the latest [release](https://github.com/daviddi
 - Source: [Blind Icon](https://icon-icons.com/icon/blind/83980)
 - Creator: [Iconnice](https://icon-icons.com/users/KAe1IaYKOlwzdgbk4Qz21/icon-sets/)
 - Licence: [CC Attribution](https://creativecommons.org/licenses/by/4.0/)
+
+## Related
+
+- [Mouse Block](https://github.com/davidding/mouse-block): a similar Chrome extension for keyboard navigation testing.
+- [Layer Toggle](https://github.com/davidding/layer-toggle): a template repository for layer-toggling Chrome extensions.
