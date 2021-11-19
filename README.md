@@ -2,11 +2,19 @@
 
 A Google Chrome extension which attempts to visually obscure a web page, in order to encourage screen reader testing.
 
-## Download
+## Add to Chrome
+
+### Official Release
+
+Add via the [Chrome Web Store](https://chrome.google.com/webstore/detail/mouse-block/khfelidkjiadbjcimipoajkhcpelfdmk).
+
+### Developer Mode
+
+#### Download
 
 Clone the repository or download the latest [release](https://github.com/davidding/vision-block/releases).
 
-## Install
+#### Install
 
 (Copied from [Chrome Developers > Documentation > Extensions > Getting started](https://developer.chrome.com/docs/extensions/mv3/getstarted/))
 
